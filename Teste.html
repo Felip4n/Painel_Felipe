@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unicive | Central Felipe</title>
+  <link rel="icon" href="data:image/png;base64,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" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Teste.css">
+</head>
+
+<body>
+
+  <!-- TRILHO DE NAVEGAÇÃO -->
+  <nav class="rail" id="sidebar" aria-label="Ferramentas">
+    <div class="rail-logo" aria-hidden="true"><img src="data:image/png;base64,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" alt=""></div>
+
+    <div class="rail-tools">
+      <button class="rail-btn" id="coffeeToggleBtn" hidden tabindex="-1" aria-hidden="true">
+        <svg class="i" viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+      </button>
+      <button class="rail-btn" id="calendarToggleBtn" data-label="Calendário" aria-label="Calendário">
+        <svg class="i" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      </button>
+      <button class="rail-btn" id="aiToggleBtn" data-label="Assistente IA" aria-label="Assistente IA">
+        <svg class="i" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>
+      </button>
+      <button class="rail-btn" id="openNotesModalBtn" data-label="Bloco de Notas" aria-label="Bloco de Notas">
+        <svg class="i" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      </button>
+      <button class="rail-btn" id="siteToggleBtn" data-label="Mini Site" aria-label="Mini Site">
+        <svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      </button>
+    </div>
+
+    <div class="rail-bottom">
+      <button class="rail-btn" id="themeToggle" data-label="Alternar tema" aria-label="Alternar tema">
+        <svg class="i i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="i i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <div class="rail-avatar" data-label="Felipe · Painel de Sistemas">FV</div>
+    </div>
+  </nav>
+
+  <!-- PAINEL DE FERRAMENTAS -->
+  <aside class="tool-panel" id="toolPanel" aria-live="polite">
+    <div class="tool-header">
+      <div class="tool-header-text">
+        <span class="tool-title" id="toolTitle">Ferramentas</span>
+        <span class="tool-sub" id="toolSub"></span>
+      </div>
+      <button class="btn-tool-close" id="toolCloseBtn" title="Fechar (Esc)" aria-label="Fechar painel">
+        <svg class="i" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <!-- PAUSA PRO CAFÉ (JOGOS) -->
+    <div class="tool-view" id="coffeeContainer">
+      <div class="game-tabs">
+        <button class="tab-btn active" data-tab="velha">❌ Velha</button>
+        <button class="tab-btn" data-tab="memoria">🧠 Memória</button>
+        <button class="tab-btn" data-tab="snake">🐍 Snake</button>
+        <button class="tab-btn" data-tab="blackjack">🃏 21</button>
+        <button class="tab-btn" data-tab="genius">🎨 Genius</button>
+        <button class="tab-btn" data-tab="forca">🔤 Forca</button>
+        <button class="tab-btn" data-tab="breakout">🧱 Breakout</button>
+        <button class="tab-btn" data-tab="invaders">👾 Invaders</button>
+      </div>
+
+      <div class="mini-game-card game-content active" id="tab-velha">
+        <div class="game-header-opts">
+          <span class="game-status" id="gameStatus">Sua vez (❌)</span>
+          <select id="gameDifficulty" class="game-diff-select" title="Dificuldade">
+            <option value="easy">Fácil</option>
+            <option value="medium" selected>Médio</option>
+            <option value="hard">Difícil</option>
+            <option value="impossible">Impossível</option>
+          </select>
+        </div>
+        <div class="game-board" id="gameBoard">
+          <div class="winning-line" id="winningLine"></div>
+          <div class="game-cell" data-index="0"></div>
+          <div class="game-cell" data-index="1"></div>
+          <div class="game-cell" data-index="2"></div>
+          <div class="game-cell" data-index="3"></div>
+          <div class="game-cell" data-index="4"></div>
+          <div class="game-cell" data-index="5"></div>
+          <div class="game-cell" data-index="6"></div>
+          <div class="game-cell" data-index="7"></div>
+          <div class="game-cell" data-index="8"></div>
+        </div>
+        <button class="btn-game-reset" id="resetGameBtn">Reiniciar</button>
+      </div>
+
+      <div class="mini-game-card game-content" id="tab-memoria">
+        <div class="game-header-opts">
+          <span class="game-status" id="memGameStatus">Pares: 0/6</span>
+          <button class="btn-game-reset" id="resetMemGameBtn">Reiniciar</button>
+        </div>
+        <div class="mem-board" id="memBoard"></div>
+      </div>
+
+      <div class="mini-game-card game-content" id="tab-snake">
+        <div class="game-header-opts">
+          <span class="game-status" id="snakeStatus">Pontos: 0</span>
+          <button class="btn-game-reset" id="resetSnakeBtn">Iniciar</button>
+        </div>
+        <canvas id="snakeCanvas" width="240" height="240" class="snake-canvas"></canvas>
+        <div class="snake-controls">
+          <button class="snake-btn" id="sUp">▲</button>
+          <div class="snake-btn-row">
+            <button class="snake-btn" id="sLeft">◀</button>
+            <button class="snake-btn" id="sDown">▼</button>
+            <button class="snake-btn" id="sRight">▶</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mini-game-card game-content" id="tab-blackjack">
+        <div class="game-header-opts">
+          <span class="game-status" id="bjStatus">Sua vez!</span>
+          <button class="btn-game-reset" id="resetBjBtn">Novo Jogo</button>
+        </div>
+        <div class="bj-area">
+          <div class="bj-hand-label">Banca: <span id="dealerScore">0</span></div>
+          <div class="bj-cards" id="dealerCards"></div>
+          <div class="bj-hand-label" style="margin-top: 8px;">Você: <span id="playerScore">0</span></div>
+          <div class="bj-cards" id="playerCards"></div>
+        </div>
+        <div class="bj-controls">
+          <button class="bj-btn" id="bjHitBtn">＋ Pedir</button>
+          <button class="bj-btn" id="bjStandBtn">✋ Parar</button>
+        </div>
+      </div>
+
+      <div class="mini-game-card game-content" id="tab-genius">
+        <div class="game-header-opts">
+          <span class="game-status" id="geniusStatus">Nível: 0</span>
+          <button class="btn-game-reset" id="resetGeniusBtn">Iniciar</button>
+        </div>
+        <div class="genius-board locked" id="geniusBoard">
+          <button class="genius-pad green" aria-label="Verde"></button>
+          <button class="genius-pad red" aria-label="Vermelho"></button>
+          <button class="genius-pad yellow" aria-label="Amarelo"></button>
+          <button class="genius-pad blue" aria-label="Azul"></button>
+        </div>
+      </div>
+
+      <div class="mini-game-card game-content" id="tab-forca">
+        <div class="game-header-opts">
+          <span class="game-status" id="hmStatus">Erros: 0/6</span>
+          <button class="btn-game-reset" id="resetHmBtn">Nova Palavra</button>
+        </div>
+        <div class="hm-figure">
+          <svg viewBox="0 0 100 110" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <g stroke="currentColor">
+              <line x1="10" y1="104" x2="90" y2="104"/>
+              <line x1="28" y1="104" x2="28" y2="8"/>
+              <line x1="28" y1="8" x2="68" y2="8"/>
+              <line x1="68" y1="8" x2="68" y2="22"/>
+            </g>
+            <circle class="hm-part" cx="68" cy="32" r="10"/>
+            <line class="hm-part" x1="68" y1="42" x2="68" y2="72"/>
+            <line class="hm-part" x1="68" y1="50" x2="54" y2="62"/>
+            <line class="hm-part" x1="68" y1="50" x2="82" y2="62"/>
+            <line class="hm-part" x1="68" y1="72" x2="56" y2="90"/>
+            <line class="hm-part" x1="68" y1="72" x2="80" y2="90"/>
+          </svg>
+        </div>
+        <div class="hm-hint" id="hmHint"></div>
+        <div class="hm-word" id="hmWord"></div>
+        <div class="hm-keys" id="hmKeys"></div>
+      </div>
+
+      <div class="mini-game-card game-content" id="tab-breakout">
+        <div class="game-header-opts">
+          <span class="game-status" id="boStatus">Pontos: 0 · ❤️ 3</span>
+          <button class="btn-game-reset" id="resetBoBtn">Iniciar</button>
+        </div>
+        <canvas id="boCanvas" width="240" height="240" class="game-canvas"></canvas>
+        <div class="snake-controls">
+          <div class="snake-btn-row">
+            <button class="snake-btn" id="boBtnLeft" aria-label="Esquerda">◀</button>
+            <button class="snake-btn" id="boBtnLaunch" aria-label="Lançar bola">●</button>
+            <button class="snake-btn" id="boBtnRight" aria-label="Direita">▶</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mini-game-card game-content" id="tab-invaders">
+        <div class="game-header-opts">
+          <span class="game-status" id="invStatus">Pontos: 0 · ❤️ 3 · Onda 1</span>
+          <button class="btn-game-reset" id="resetInvBtn">Iniciar</button>
+        </div>
+        <canvas id="invCanvas" width="240" height="240" class="game-canvas"></canvas>
+        <div class="snake-controls">
+          <div class="snake-btn-row">
+            <button class="snake-btn" id="invBtnLeft" aria-label="Esquerda">◀</button>
+            <button class="snake-btn" id="invBtnFire" aria-label="Atirar">🔥</button>
+            <button class="snake-btn" id="invBtnRight" aria-label="Direita">▶</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CALENDÁRIO INTERATIVO -->
+    <div class="tool-view" id="calendarContainer">
+      <div class="calendar-card">
+        <div class="cal-header">
+          <button id="calPrevBtn" class="cal-nav-btn">‹</button>
+          <span id="calMonthYear" class="cal-title">Mês Ano</span>
+          <button id="calNextBtn" class="cal-nav-btn">›</button>
+        </div>
+        <div class="cal-weekdays">
+          <span>D</span><span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span>
+        </div>
+        <div class="cal-days-grid" id="calDaysGrid"></div>
+        <div class="cal-events-section">
+          <div class="cal-selected-date" id="calSelectedDate">Selecione um dia</div>
+          <div class="cal-input-group">
+            <input type="text" id="calEventInput" placeholder="Novo compromisso..." class="cal-input">
+            <button class="btn-cal-add" id="addCalEventBtn">＋</button>
+          </div>
+          <ul class="cal-events-list" id="calEventsList"></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ASSISTENTE IA -->
+    <div class="tool-view ai-view" id="aiContainer">
+      <div class="ai-card">
+        <div class="ai-chat-box" id="aiChatBox">
+          <div class="ai-msg bot">Olá Felipe! Como posso ajudar hoje?</div>
+        </div>
+        <div class="ai-chips" id="aiChips">
+          <button class="ai-chip" data-prompt="Me ajude a escrever um e-mail profissional curto e educado.">✉️ Escrever e-mail</button>
+          <button class="ai-chip" data-prompt="Explique de forma simples como organizar minha rotina de trabalho.">🗂️ Organizar rotina</button>
+          <button class="ai-chip" data-prompt="Me dê 5 ideias criativas para engajar alunos.">💡 Ideias</button>
+        </div>
+        <div class="ai-input-group">
+          <input type="text" id="aiInput" placeholder="Pergunte algo..." class="ai-input">
+          <button class="btn-ai-send" id="sendAiBtn" aria-label="Enviar">
+            <svg class="i" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MINI SITE EXTERNO -->
+    <div class="tool-view site-view" id="siteContainer">
+      <div class="site-card">
+        <iframe data-src="https://www.scorebat.com/embed/livescore/" title="Placares ao Vivo"></iframe>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ÁREA PRINCIPAL -->
+  <main class="main-wrapper">
+    <div class="page">
+
+      <header class="hero">
+        <div class="hero-top">
+          <span class="eyebrow" id="heroDate">Hoje</span>
+          <span class="hero-clock" id="heroClock">--:--</span>
+        </div>
+        <h1 class="hero-title"><span id="heroGreeting">Olá</span>, <span class="grad">Felipe</span></h1>
+        <p class="hero-sub">Como vai Hoje?</p>
+
+        <div class="hero-actions">
+          <div class="search-box">
+            <svg class="i search-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="searchBar" class="search-input" placeholder="Filtrar sistemas ou tags..." autocomplete="off">
+            <span class="kbd">/</span>
+          </div>
+          <button class="btn-add" id="openModalBtn">
+            <svg class="i" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Novo Link
+          </button>
+        </div>
+
+        <div class="hero-stats">
+          <span class="stat"><b id="statSystems">0</b> sistemas</span>
+          <span class="stat"><b id="statEvents">0</b> <span id="statEventsLabel">compromissos hoje</span></span>
+        </div>
+      </header>
+
+      <div class="dashboard-container">
+        <section class="category-group" id="cat-ensino">
+          <h2 class="category-header"><span class="cat-emoji">📚</span><span>Ensino &amp; Acadêmico</span><span class="cat-count">0</span></h2>
+          <div class="cards-grid">
+            <a href="https://posead.unicive.edu.br/login/index.php" target="_blank" rel="noopener noreferrer" class="custom-card">
+              <div class="card-top"><div class="card-icon-badge">🎓</div><span class="card-arrow"><svg class="i" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+              <div class="card-content"><span class="card-title">Moodle Pós Ead</span><span class="card-tag">Ambiente de Ensino</span></div>
+            </a>
+            <a href="https://graduacaoead.unicive.edu.br/login/index.php" target="_blank" rel="noopener noreferrer" class="custom-card">
+              <div class="card-top"><div class="card-icon-badge">📘</div><span class="card-arrow"><svg class="i" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+              <div class="card-content"><span class="card-title">Moodle Ead</span><span class="card-tag">Ambiente de Ensino</span></div>
+            </a>
+            <a href="https://graduacaopresencial.unicive.edu.br/my/" target="_blank" rel="noopener noreferrer" class="custom-card">
+              <div class="card-top"><div class="card-icon-badge">🏛️</div><span class="card-arrow"><svg class="i" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+              <div class="card-content"><span class="card-title">Moodle Presencial</span><span class="card-tag">Ambiente de Ensino</span></div>
+            </a>
+            <a href="https://sistema.unicive.edu.br/academico/aluno-v2/login" target="_blank" rel="noopener noreferrer" class="custom-card">
+              <div class="card-top"><div class="card-icon-badge">👨‍🎓</div><span class="card-arrow"><svg class="i" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+              <div class="card-content"><span class="card-title">Portal do Aluno</span><span class="card-tag">Gestão de Alunos</span></div>
+            </a>
+          </div>
+        </section>
+
+        <section class="category-group" id="cat-gestao">
+          <h2 class="category-header"><span class="cat-emoji">⚙️</span><span>Gestão &amp; Recursos Humanos</span><span class="cat-count">0</span></h2>
+          <div class="cards-grid">
+            <a href="https://gestaounicive.com.br/index.xhtml" target="_blank" rel="noopener noreferrer" class="custom-card">
+              <div class="card-top"><div class="card-icon-badge">💻</div><span class="card-arrow"><svg class="i" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+              <div class="card-content"><span class="card-title">Icode</span><span class="card-tag">Gestão Interna</span></div>
+            </a>
+            <a href="https://unicive360.com.br/" target="_blank" rel="noopener noreferrer" class="custom-card">
+              <div class="card-top"><div class="card-icon-badge">🌐</div><span class="card-arrow"><svg class="i" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+              <div class="card-content"><span class="card-title">360</span><span class="card-tag">Plataforma Global</span></div>
+            </a>
+            <a href="https://uniaomaringaense192649.rm.cloudtotvs.com.br/FrameHTML/web/app/RH/PortalMeuRH/#/home" target="_blank" rel="noopener noreferrer" class="custom-card">
+              <div class="card-top"><div class="card-icon-badge">⏱️</div><span class="card-arrow"><svg class="i" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+              <div class="card-content"><span class="card-title">Ponto Totvs</span><span class="card-tag">Portal RH</span></div>
+            </a>
+            <a href="https://app.clinicanasnuvens.com.br/" target="_blank" rel="noopener noreferrer" class="custom-card">
+              <div class="card-top"><div class="card-icon-badge">☁️</div><span class="card-arrow"><svg class="i" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+              <div class="card-content"><span class="card-title">Clinica nas Nuvens</span><span class="card-tag">Módulo Saúde</span></div>
+            </a>
+          </div>
+        </section>
+
+        <section class="category-group" id="cat-comunicacao">
+          <h2 class="category-header"><span class="cat-emoji">🚀</span><span>Comunicação &amp; Organização</span><span class="cat-count">0</span></h2>
+          <div class="cards-grid">
+            <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer" class="custom-card">
+              <div class="card-top"><div class="card-icon-badge">💬</div><span class="card-arrow"><svg class="i" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+              <div class="card-content"><span class="card-title">Whatsapp</span><span class="card-tag">Mensagens</span></div>
+            </a>
+            <a href="https://studio.hablla.com/workspace/64a56365aaedd19fa72d2787/feed/workspace" target="_blank" rel="noopener noreferrer" class="custom-card">
+              <div class="card-top"><div class="card-icon-badge">📢</div><span class="card-arrow"><svg class="i" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+              <div class="card-content"><span class="card-title">Hablla</span><span class="card-tag">Atendimento</span></div>
+            </a>
+            <a href="https://trello.com/b/cW1e1WkQ/my-trello-board" target="_blank" rel="noopener noreferrer" class="custom-card">
+              <div class="card-top"><div class="card-icon-badge">📋</div><span class="card-arrow"><svg class="i" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+              <div class="card-content"><span class="card-title">Trello</span><span class="card-tag">Gestão de Tarefas</span></div>
+            </a>
+          </div>
+        </section>
+
+        <section class="category-group" id="cat-suporte">
+          <h2 class="category-header"><span class="cat-emoji">🎫</span><span>Suporte</span><span class="cat-count">0</span></h2>
+          <div class="cards-grid">
+            <a href="https://grupoacx.zendesk.com/hc/pt-br" target="_blank" rel="noopener noreferrer" class="custom-card">
+              <div class="card-top"><div class="card-icon-badge">🎟️</div><span class="card-arrow"><svg class="i" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+              <div class="card-content"><span class="card-title">Tickets Grupo A</span><span class="card-tag">Central Zendesk</span></div>
+            </a>
+            <a href="https://ajuda.jacad.com.br/support/tickets" target="_blank" rel="noopener noreferrer" class="custom-card">
+              <div class="card-top"><div class="card-icon-badge">🎟️</div><span class="card-arrow"><svg class="i" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+              <div class="card-content"><span class="card-title">Tickets Jacad</span><span class="card-tag">Chamados Acadêmicos</span></div>
+            </a>
+          </div>
+        </section>
+        <div class="empty-state" id="emptyState">
+          <span class="emoji">🔎</span>
+          <strong>Nenhum sistema encontrado</strong>
+          <span>Tente outro nome ou tag.</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- MODAL: CADASTRAR NOVO LINK -->
+  <div class="modal-overlay" id="linkModal">
+    <div class="modal-content">
+      <h3>Cadastrar Novo Atalho</h3>
+
+      <div class="form-group">
+        <label>Nome do Sistema</label>
+        <input type="text" id="inputTitle" class="form-input" placeholder="Ex: Google Drive" required>
+      </div>
+
+      <div class="form-group">
+        <label>Link (URL)</label>
+        <input type="url" id="inputUrl" class="form-input" placeholder="https://drive.google.com" required>
+      </div>
+
+      <div class="form-group">
+        <label>Descrição Curta / Tag</label>
+        <input type="text" id="inputTag" class="form-input" placeholder="Ex: Nuvem de Arquivos">
+      </div>
+
+      <div class="form-group">
+        <label>Categoria</label>
+        <select id="selectCategory" class="form-select">
+          <option value="cat-ensino">Ensino &amp; Acadêmico</option>
+          <option value="cat-gestao">Gestão &amp; Recursos Humanos</option>
+          <option value="cat-comunicacao">Comunicação &amp; Organização</option>
+          <option value="cat-suporte">Suporte</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Emoji (Ícone)</label>
+        <input type="text" id="inputIcon" class="form-input" value="🔗" style="width: 70px; text-align: center;">
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn-cancel" id="closeModalBtn">Cancelar</button>
+        <button class="btn-save" id="saveLinkBtn">Salvar Link</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: BLOCO DE NOTAS -->
+  <div class="notes-modal-overlay" id="notesModalOverlay">
+    <div class="notes-modal-content">
+      <div class="notes-modal-header">
+        <h2 id="notesModalTitle">📁 Selecione uma Pasta</h2>
+        <button class="btn-close-notes" id="closeNotesModalBtn" aria-label="Fechar">
+          <svg class="i" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="notes-view active" id="viewFolders">
+        <div class="folders-top-bar">
+          <p>Escolha uma pasta para abrir ou crie uma nova:</p>
+          <button class="btn-add-main-folder" id="btnCreateFolder">＋ Nova Pasta</button>
+        </div>
+        <div class="folders-grid" id="foldersGrid"></div>
+      </div>
+
+      <div class="notes-view" id="viewEditor">
+        <div class="editor-top-bar">
+          <button class="btn-back-folders" id="btnBackToFolders">⬅ Voltar às Pastas</button>
+          <div class="editor-actions">
+            <button class="btn-add-topic-modal" id="btnAddTopicModal">＋ Novo Tópico</button>
+            <button class="btn-del-folder-modal" id="btnDelFolderModal">🗑️ Excluir Pasta</button>
+          </div>
+        </div>
+        <div class="topics-container-modal" id="topicsContainerModal"></div>
+      </div>
+
+      <div class="notes-modal-footer">
+        <span id="notesModalStatus">Pronto</span>
+      </div>
+
+      <!-- MODAL INTERNO: CRIAR PASTA -->
+      <div class="modal-overlay" id="customFolderModal">
+        <div class="modal-content" style="max-width: 380px;">
+          <h3>Criar Nova Pasta</h3>
+          <div class="form-group">
+            <label>Nome da Pasta</label>
+            <input type="text" id="inputFolderName" class="form-input" placeholder="Ex: Projetos 2026" required>
+          </div>
+          <div class="form-group">
+            <label>Emoji (Ícone)</label>
+            <input type="text" id="inputFolderIcon" class="form-input" value="📁" style="width: 70px; text-align: center;">
+          </div>
+          <div class="modal-actions">
+            <button class="btn-cancel" id="closeFolderModalBtn">Cancelar</button>
+            <button class="btn-save" id="saveFolderBtn">Criar Pasta</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="Teste.js"></script>
+</body>
+
+</html>
